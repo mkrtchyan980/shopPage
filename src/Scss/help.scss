@@ -1,0 +1,201 @@
+$myColor: #303132;
+$breakpoints_tablet: 834px;
+$breakpoints_phone: 375px;
+
+.HelpForBuyers{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .help-cont{
+        width: 45%;
+        padding: 150px 0 100px 0; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h1{
+            padding: 30px;
+            color: $myColor;
+            font-size: 19px;
+            font-family: sans-serif;
+            letter-spacing: 0.3rem;
+            text-align: center;
+        }
+        span{
+            text-align: center;
+            line-height: 24px;
+            font-size: 14px;
+            color: $myColor;
+            font-family: sans-serif;
+
+        }
+    }
+    .help-infos{
+        width: 80%;
+        border-top: 1px solid $myColor;
+        border-bottom: 1px solid $myColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: $breakpoints_tablet) {
+            flex-direction: column;
+            width: 100%;
+        }
+        .help-info{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+            @media screen and (max-width: $breakpoints_tablet) {
+                width: 100%;
+            }
+            .question-cont{
+                p{
+                    width: 100%;
+                    font-size: 14px;
+                    font-family: sans-serif;
+                    color: $myColor;
+                    line-height: 20px;
+                    letter-spacing: 0.01rem;
+                    text-align: center;
+                }
+            }
+            .num-cont{
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                @media screen and (max-width: $breakpoints_tablet) {
+                    width: 100%;
+                }
+                h5{
+                    font-size: 14px;
+                    font-family: sans-serif;
+                    letter-spacing: 0.1em;
+                    color: $myColor;
+                }
+                p{
+                    font-size: 14px;
+                    font-family: sans-serif;
+                    letter-spacing: 0.1em;
+                    color: $myColor;
+                    line-height: 20px;
+                }
+            }
+        }
+        .inp-cont{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+            @media screen and (max-width: 650px) {
+                width: 70%;
+            }
+            input{
+                width: 100%;
+                height: 30px;
+                padding-left: 24px;
+                font-family: sans-serif;
+                margin-bottom: 5px;
+                border: 1px solid $myColor;
+            }
+            textarea{
+                width: 100%;
+                height: 125px;
+                padding: 10px 24px;
+                font-family: sans-serif;
+                border: 1px solid $myColor;
+                resize: none;
+            }
+            .btn{
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                padding-top: 10px;
+                button{
+                    background-color: $myColor;
+                    font-size: 18px;
+                    font-family: sans-serif;
+                    color: #fff;
+                    padding: 5px 3px;
+                    outline: none;
+                }
+            }
+        }
+    }
+    .return-policy{
+        width: 80%;
+        padding: 150px 0 100px 0; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-bottom: 1px solid $myColor;
+        h1{
+            padding: 30px;
+            color: $myColor;
+            font-size: 19px;
+            font-family: sans-serif;
+            letter-spacing: 0.3rem;
+            text-align: center;
+        }
+        span{
+            width: 55%;
+            text-align: center;
+            line-height: 24px;
+            font-size: 14px;
+            color: $myColor;
+            font-family: sans-serif;
+
+        }
+    }
+    .FAQ{
+        width: 90%;
+        padding: 150px 0 100px 0; 
+        text-align: center;
+        h1{
+            padding: 30px;
+            color: $myColor;
+            font-size: 19px;
+            font-family: sans-serif;
+            letter-spacing: 0.3rem;
+            text-align: center;
+        }
+
+        .FAQ-cont{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            @media screen and (max-width: $breakpoints_tablet) {
+                flex-direction: column;
+            }
+            .FAQ-child{
+                width: 50%;
+                h3{
+                    font-size: 19px;
+                    font-family: sans-serif;
+                    letter-spacing: 0.3em;
+                    font-weight: 300;
+                    color: $myColor;
+                    padding-top: 30px;
+                }
+                p{
+                    font-size: 14px;
+                    font-family: sans-serif;
+                    letter-spacing: 0.09em;
+                    color: $myColor;
+                    padding-top: 40px;
+                }
+    
+            }
+        }
+    }
+}
+

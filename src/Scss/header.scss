@@ -1,0 +1,100 @@
+$myColor: #535151;
+$colorFont: #D3D3D3;
+$breakpoints_tablet: 834px;
+$breakpoints_phone: 375px;
+
+header{
+    width: 100%;
+    height: 88px;
+    background-color: $myColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 999;
+    font-family: sans-serif;
+    
+    nav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .logo{
+            display: flex;
+            padding: 25px;
+            a{
+                color: $colorFont;
+                text-decoration: none;
+                font-size: 20px;
+                cursor: pointer;
+                letter-spacing: 0.4rem;
+                font-weight: 550;
+                @media screen and (max-width: $breakpoints_tablet){
+                    font-size: 17px;
+                    letter-spacing: 0.2rem;   
+                }
+                @media screen and (max-width: $breakpoints_phone){
+                    font-size: 15px;   
+                }
+            }
+
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            @media screen and (max-width: $breakpoints_tablet){
+                gap: 30px;  
+            }
+            @media screen and (max-width: 435px){
+                gap: 20px;
+            }
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: $colorFont;
+                    font-size: 15px;
+                    letter-spacing: 0.1rem;
+                }
+                ion-icon{
+                    font-size: 22px;
+                    @media screen and (max-width: $breakpoints_tablet){
+                        font-size: 18px;
+                    }
+                    @media screen and (max-width: 400px){
+                        font-size: 15px;
+                    }
+                }
+                span {
+                    padding: 1px 4px;
+                    font-size: 12px;
+                    background-color: #98676f;
+                    border-radius: 5px;
+                    position: relative;
+                    top: -17px;
+                    left: -8px;
+                    @media screen and (max-width: $breakpoints_tablet){
+                        font-size: 9px;
+                        top: -13px;
+                        border-radius: 3px;
+                    }
+                }
+                
+            }
+            .burger-icons{
+                display: none;
+                @media screen and (max-width: $breakpoints_tablet){
+                    display: block;   
+                }
+
+            }
+            .menu-list{
+                @media screen and (max-width: $breakpoints_tablet){
+                    display: none;   
+                }
+            }
+        }
+    }
+}

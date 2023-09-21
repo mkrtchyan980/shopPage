@@ -1,0 +1,170 @@
+$infoColor: #303132;
+$breakpoints_tablet: 834px;
+$breakpoints_phone: 375px;
+
+section{
+    width: 100%;
+    .Home{
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        img{
+            width: 100%;
+            height: 600px;
+            object-fit: fill;
+            margin-top: 88px;
+            @media screen and (max-width: $breakpoints_tablet) {
+                height: 450px;
+            }
+            @media screen and (max-width: $breakpoints_phone) {
+                height: 300px;
+            }
+        }
+        .home-info{
+            width:  58%;
+            height: 25%;
+            background-color: #FFFFFF80;
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+            position: absolute;
+            margin-top: 50px;
+            @media screen and (max-width: $breakpoints_tablet) {
+                width: 80%;
+            }
+            span{
+                font-size: 55px;
+                color: $infoColor;
+                letter-spacing: 0.2rem;
+                font-weight: 800;
+                
+                @media screen and (max-width: 700px) {
+                    font-size: 48px;
+                }
+                @media screen and (max-width: 600px) {
+                    font-size: 40px;
+                }
+                @media screen and (max-width: 510px) {
+                    font-size: 31px;
+                }
+            }
+        .home-btn{
+            width: 60%;
+            height: 40px;
+            font-size: 18px;
+            font-family: sans-serif;
+            background-color: $infoColor;
+            margin-bottom: 10px;
+            a{
+                color: #fff;
+                text-decoration: none;
+            }
+            @media screen and (max-width: $breakpoints_tablet){
+                height: 35px;  
+                font-size: 14px; 
+            }
+            @media screen and (max-width: $breakpoints_phone){
+                height: 30px;
+                font-size: 10px; 
+            }
+        }
+    }
+    .child{
+        width: 100%;
+        height: 47px;
+        background-color: #D3D3D399;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span{
+            color: $infoColor;
+            font-size: 13px;
+            letter-spacing: 0.3rem;
+            font-family: sans-serif;
+            text-align: center;
+        }
+    }
+}
+.cont{
+    .info{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 30px;
+        span{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 37px;
+            color: $infoColor;
+            font-weight: 900;
+            letter-spacing: 0.675rem;
+            text-align: center;
+            @media screen and (max-width: $breakpoints_tablet) {
+                font-size: 30px;
+                padding: 20px;
+            }
+        }
+        .line{
+            width: 31px;
+            border-top: 2px solid;
+        }
+        p{
+            font-size: 19px;
+            font-family: sans-serif;
+            color: $infoColor;
+            letter-spacing: 0.35rem;
+            text-align: center;
+            padding: 20px;
+        }
+    }
+    .image-cont{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        @media screen and (max-width: 650px) {
+            flex-direction: column;
+        }
+        .image-child{
+            width: 300px;
+            height: 354px;
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            p{
+                width: 100%;
+                padding: 10px;
+                text-align: center;
+                background-color: $infoColor;
+                color: #fff;
+                position: absolute;
+                bottom: 0;
+            }
+            a{
+                width: 100%;
+                font-size: 40px;
+                text-align: center;
+                background-color: transparent;
+                font-family: 'Times New Roman', Times, serif;
+                color: $infoColor;
+                text-decoration: none;
+                position: absolute;
+                top: 25px;
+                left: 0;
+                transition: 1s;
+            }
+        }
+    }
+}
+}

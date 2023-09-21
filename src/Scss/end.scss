@@ -1,0 +1,145 @@
+$infoColor: #303132;
+$breakpoints_tablet: 834px;
+$breakpoints_phone: 375px;
+
+
+.end-cont{
+    width: 100%;
+    height: 200px;
+    background-color: $infoColor;
+    margin-top: 50px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-top: 180px;
+    padding: 20px;
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .link-cont{
+        width: 32%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        p{
+            color: #FFFFFF80;
+            font-size: 15px;
+            font-family: sans-serif;
+            padding: 30px 5px;
+            letter-spacing: 0.2rem;
+            text-align: center;
+            @media screen and (max-width: $breakpoints_tablet){
+                font-size: 13px;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
+        .link-child{
+            a{
+                color: #fff;
+                padding: 8px;
+            }
+            img{
+                @media screen and (max-width: $breakpoints_tablet) {
+                    width: 23px;
+                    height: 23px;
+                }
+            }
+        }
+    }
+    .input-cont{
+        width: 32%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        p{
+            color: #FFFFFF80;
+            font-size: 15px;
+            font-family: sans-serif;
+            padding: 30px 5px;
+            letter-spacing: 0.2rem;
+            text-align: center;
+            @media screen and (max-width: $breakpoints_tablet){
+    
+                font-size: 13px;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            width: 80%;
+        }
+        .input-child{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            input{
+                width: 100%;
+                height: 35px;
+                background-color:  #D3D3D3;
+                margin-bottom: 5px;
+                outline: none;
+                padding-left: 5px;
+                @media screen and (max-width: 600px) {
+                    height: 35px;
+                }
+            }
+            button{
+                width: 100%;
+                height: 35px;
+                background-color: #D3D3D3;
+                color: $infoColor;
+                outline: none;
+                @media screen and (max-width: 600px) {
+                    height: 35px;
+                }
+            }
+        }
+    }
+    .help-info-cont{
+        width: 32%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        p{
+            color: #FFFFFF80;
+            font-size: 15px;
+            font-family: sans-serif;
+            padding: 30px 4px;
+            letter-spacing: 0.2rem;
+            text-align: center;
+            @media screen and (max-width: $breakpoints_tablet){
+                font-size: 13px;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
+        span{
+            color: #FFFFFF80;
+            text-decoration: none;
+            font-size: 13px;
+            font-family: sans-serif;
+            letter-spacing: 0.1rem;
+            padding: 5px;
+            @media screen and (max-width: $breakpoints_tablet) {
+                font-size: 11px;
+            }
+        }
+        a{
+            color: #FFFFFF80;
+            text-decoration: none;
+            font-size: 13px;
+            font-family: sans-serif;
+            letter-spacing: 0.1rem;
+            @media screen and (max-width: $breakpoints_tablet) {
+                font-size: 11px;
+            }   
+        }
+
+    }
+}

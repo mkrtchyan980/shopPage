@@ -1,0 +1,71 @@
+$myColor: #303132;
+
+.Addresses{
+    width: 100%;
+    padding-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .addresses-cont{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        .addresses-parent{
+            h2{
+                font-size: 19px;
+                font-family: sans-serif;
+                letter-spacing: 0.3em;
+                color: $myColor;
+            }
+            p{
+                font-size: 14px;
+                font-family: sans-serif;
+                letter-spacing: 0.09em;
+                color: $myColor;
+                padding-top: 40px;
+            }
+        }
+        .addresses-child{
+            padding-top: 20px;
+            h4{
+                font-size: 14px;
+                font-family: sans-serif;
+                letter-spacing: 0.09em;
+                line-height: 2.6em;
+            }
+            p{
+                font-size: 14px;
+                font-family: sans-serif;
+                letter-spacing: 0.09em;
+                color: $myColor;
+                line-height: 1.6em;
+                
+            }
+            .addresses-info{
+                padding-top: 20px;
+                p{
+                    font-size: 14px;
+                    font-family: sans-serif;
+                    letter-spacing: 0.09em;
+                    color: $myColor;
+                    line-height: 1.6em;
+                }
+                span{
+                    font-size: 14px;
+                    font-family: sans-serif;
+                    letter-spacing: 0.09em;
+                    color: $myColor;
+                }
+            }   
+        }
+        .line{
+            margin-top: 20px;
+            width: 20px;
+            border: 0.5px solid $myColor;
+        }
+    }
+}

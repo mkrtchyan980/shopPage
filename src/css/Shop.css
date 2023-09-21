@@ -1,0 +1,68 @@
+.Shop {
+  width: 100%;
+  padding-top: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Shop h1 {
+  font-size: 19px;
+  font-family: sans-serif;
+  letter-spacing: 0.3rem;
+  color: #303132;
+  padding-top: 30px;
+}
+.Shop .shop-cont {
+  padding-top: 100px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 180px;
+}
+@media screen and (max-width: 1000px) {
+  .Shop .shop-cont {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media screen and (max-width: 834px) {
+  .Shop .shop-cont {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  .Shop .shop-cont {
+    grid-template-columns: auto;
+  }
+}
+.Shop .shop-cont .shop-child {
+  width: 220px;
+  height: 220px;
+  padding: 30px;
+  position: relative;
+}
+.Shop .shop-cont .shop-child img {
+  width: 100%;
+  height: 100%;
+}
+.Shop .shop-cont .shop-child .shop-info {
+  color: #303132;
+  font-size: 15px;
+  font-family: sans-serif;
+  position: absolute;
+  bottom: -115px;
+}
+.Shop .shop-cont .shop-child .shop-info p {
+  padding: 10px 0;
+}
+.Shop .shop-cont .shop-child .shop-info button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: #303132;
+  color: #fff;
+  font-family: sans-serif;
+}/*# sourceMappingURL=Shop.css.map */

@@ -1,0 +1,5 @@
+{
+    "liveSassCompile.settings.includeItems": [],
+    "liveSassCompile.settings.watchOnLaunch": true,
+    "liveSassCompile.settings.useNewCompiler": false
+}

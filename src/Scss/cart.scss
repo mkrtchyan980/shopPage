@@ -1,0 +1,136 @@
+$myColor: #303132;
+$breakpoints_tablet: 834px;
+$breakpoints_phone: 375px;
+
+.Cart{
+    width: 100%;
+        .button{
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            padding: 4% 18%;
+            button{
+                background-color: #98676f;
+                padding: 10px 15px;
+                color: #fff;
+                font-family: sans-serif;
+                font-size: 12px;    
+                border: none;
+            }
+        }
+    .cart-cont{
+        width: 100%;
+        padding: 130px 200px 0;
+        @media screen and (max-width: $breakpoints_tablet) {
+            padding: 130px 80px 0;
+        }
+        @media screen and (max-width: 525px) {
+            padding: 130px 40px 0;
+        }
+        h2{
+            font-size: 19px;
+            font-family: sans-serif;
+            letter-spacing: 0.2em;
+            color: $myColor;
+            padding: 35px;
+            border-bottom: 1px solid $myColor;
+        }
+        .cart-child{
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 1px solid $myColor;
+            img{
+                width: 100px;
+                height: 100px;
+                @media screen and (max-width: $breakpoints_tablet) {
+                    width: 80px;
+                    height: 80px;
+                    padding: 5px;
+                }
+            }
+            .cart-info-div{
+                display: flex;
+                align-items: center;
+                @media screen and (max-width: 900px){
+                    flex-direction: column;  
+                }
+                .item-info{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    p{
+                        width: 200px;
+                        font-size: 14px;
+                        font-family: sans-serif;
+                        line-height: 1.6rem;
+                        letter-spacing: 0.1rem;
+                        @media screen and (max-width: $breakpoints_tablet) {
+                            width: 170px;
+                            font-size: 12px;
+                            line-height: 1rem;
+                            letter-spacing: 0;
+                        }
+                        @media screen and (max-width: 480px) {
+                            width: 140px;
+                            font-size: 9px;
+                        }
+                    }
+                    h4{
+                        @media screen and (max-width: $breakpoints_tablet) {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+            .cart-info{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                button{
+                    width: 20px;
+                    height: 20px;
+                    background-color: $myColor;
+                    color: #fff;
+                    @media screen and (max-width: $breakpoints_tablet) {
+                        width: 15px;
+                        height: 15px;
+                        font-size: 10px;
+                    }
+                }
+                h2{
+                    padding: 7px;
+                    @media screen and (max-width: $breakpoints_tablet) {
+                        font-size: 15px;
+                    }
+                    @media screen and (max-width: 400px) {
+                        font-size: 12px;
+                    }
+                }
+            }
+            .cart-price{
+                display: flex;
+                gap: 10px;
+                h1{
+                    @media screen and (max-width: $breakpoints_tablet) {
+                        font-size: 11px;
+                        padding-bottom: 5px;
+                    }
+                }
+                button{
+                    width: 30px;
+                    height: 30px;
+                    background-color: $myColor;
+                    color: #fff;
+                    @media screen and (max-width: $breakpoints_tablet) {
+                        width: 20px;
+                        height: 20px;
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,184 @@
+section {
+  width: 100%;
+}
+section .Home {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+section .Home img {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  margin-top: 88px;
+}
+@media screen and (max-width: 834px) {
+  section .Home img {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 375px) {
+  section .Home img {
+    height: 300px;
+  }
+}
+section .Home .home-info {
+  width: 58%;
+  height: 25%;
+  background-color: rgba(255, 255, 255, 0.5019607843);
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 50px;
+}
+@media screen and (max-width: 834px) {
+  section .Home .home-info {
+    width: 80%;
+  }
+}
+section .Home .home-info span {
+  font-size: 55px;
+  color: #303132;
+  letter-spacing: 0.2rem;
+  font-weight: 800;
+}
+@media screen and (max-width: 700px) {
+  section .Home .home-info span {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 600px) {
+  section .Home .home-info span {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 510px) {
+  section .Home .home-info span {
+    font-size: 31px;
+  }
+}
+section .Home .home-info .home-btn {
+  width: 60%;
+  height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  background-color: #303132;
+  margin-bottom: 10px;
+}
+section .Home .home-info .home-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+@media screen and (max-width: 834px) {
+  section .Home .home-info .home-btn {
+    height: 35px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 375px) {
+  section .Home .home-info .home-btn {
+    height: 30px;
+    font-size: 10px;
+  }
+}
+section .Home .child {
+  width: 100%;
+  height: 47px;
+  background-color: rgba(211, 211, 211, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .Home .child span {
+  color: #303132;
+  font-size: 13px;
+  letter-spacing: 0.3rem;
+  font-family: sans-serif;
+  text-align: center;
+}
+section .cont .info {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+section .cont .info span {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 37px;
+  color: #303132;
+  font-weight: 900;
+  letter-spacing: 0.675rem;
+  text-align: center;
+}
+@media screen and (max-width: 834px) {
+  section .cont .info span {
+    font-size: 30px;
+    padding: 20px;
+  }
+}
+section .cont .info .line {
+  width: 31px;
+  border-top: 2px solid;
+}
+section .cont .info p {
+  font-size: 19px;
+  font-family: sans-serif;
+  color: #303132;
+  letter-spacing: 0.35rem;
+  text-align: center;
+  padding: 20px;
+}
+section .cont .image-cont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+@media screen and (max-width: 650px) {
+  section .cont .image-cont {
+    flex-direction: column;
+  }
+}
+section .cont .image-cont .image-child {
+  width: 300px;
+  height: 354px;
+  position: relative;
+}
+section .cont .image-cont .image-child img {
+  width: 100%;
+  height: 100%;
+}
+section .cont .image-cont .image-child p {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: #303132;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+}
+section .cont .image-cont .image-child a {
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  background-color: transparent;
+  font-family: "Times New Roman", Times, serif;
+  color: #303132;
+  text-decoration: none;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  transition: 1s;
+}/*# sourceMappingURL=home.css.map */

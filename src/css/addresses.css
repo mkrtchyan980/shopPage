@@ -1,0 +1,66 @@
+.Addresses {
+  width: 100%;
+  padding-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Addresses .addresses-cont {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.Addresses .addresses-cont .addresses-parent h2 {
+  font-size: 19px;
+  font-family: sans-serif;
+  letter-spacing: 0.3em;
+  color: #303132;
+}
+.Addresses .addresses-cont .addresses-parent p {
+  font-size: 14px;
+  font-family: sans-serif;
+  letter-spacing: 0.09em;
+  color: #303132;
+  padding-top: 40px;
+}
+.Addresses .addresses-cont .addresses-child {
+  padding-top: 20px;
+}
+.Addresses .addresses-cont .addresses-child h4 {
+  font-size: 14px;
+  font-family: sans-serif;
+  letter-spacing: 0.09em;
+  line-height: 2.6em;
+}
+.Addresses .addresses-cont .addresses-child p {
+  font-size: 14px;
+  font-family: sans-serif;
+  letter-spacing: 0.09em;
+  color: #303132;
+  line-height: 1.6em;
+}
+.Addresses .addresses-cont .addresses-child .addresses-info {
+  padding-top: 20px;
+}
+.Addresses .addresses-cont .addresses-child .addresses-info p {
+  font-size: 14px;
+  font-family: sans-serif;
+  letter-spacing: 0.09em;
+  color: #303132;
+  line-height: 1.6em;
+}
+.Addresses .addresses-cont .addresses-child .addresses-info span {
+  font-size: 14px;
+  font-family: sans-serif;
+  letter-spacing: 0.09em;
+  color: #303132;
+}
+.Addresses .addresses-cont .line {
+  margin-top: 20px;
+  width: 20px;
+  border: 0.5px solid #303132;
+}/*# sourceMappingURL=addresses.css.map */
